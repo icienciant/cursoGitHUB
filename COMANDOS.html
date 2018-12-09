@@ -4,16 +4,21 @@
 	<title>
 		Comandos GIT
 	</title>
+	<link rel="STYLESHEET" type="text/css" href="style.css"> 
+
 </head>
 <body>
-	<h2>Estados de GIT</h2>
+	<div>
+	<h2 >Estados de GIT</h2>
 	<p>Existen tres esdados en GIT:</p>
 	<ol>
 		<li>Working Directory</li>
 		<li>Staging Area</li>
 		<li>Git repository</li>
-	</ol>
- 	<h2>Comandos Bash con GIT</h2>
+	</ol>	
+	</div>
+	<div>
+	<h2>Comandos Bash con GIT</h2>
  	<p>Los siguientes comandos pueden ser utilzados en la consola de GIT</p>
  	<dl>
  		<dt>GIT INIT</dt>
@@ -27,7 +32,10 @@
  		<dd>Se quitara el arhivo del Stating Area sin eliminar por completo el archvio</dd>
  		<dt>GIT RM -F [NOMBRE_ARCHIVO]</dt>
  		<dd>Elimina definitivamente el archivo</dd>
- 	</dl>
+ 	</dl>	
+	</div>
+ 	
+ 	<div>
  	<h2>USO DE ETIQUETAS</h2>
  	<p>Sirve para etiquetar los cambos o versiones que ocurrieron. Es decir, despues de un commit. Existe de dos tipos las ligeras y anotadas</p>
  	<dl>
@@ -39,7 +47,10 @@
  		<li>git tag -l: lista los tag creados</li>
  		<li>git tag -d [tag]: borra el tag existente</li>
 
- 	</ol>
+ 	</ol>	
+ 	</div>
+
+ 	<div>
  	<h2>GIT LOG</h2>
  	<P>A través de GIT LOG se puede ver multiple informacion sobre los secesos ocurridos en GiT</P>
  	<dl>
@@ -52,12 +63,17 @@
  	<p><small>
  		SUPERLOG: git config --global alias.superlog "log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 
- 	</small></p>
+ 	</small></p>	
+ 	</div>
+ 	
+ 	<div>
  	<h2>Comparar con DIFF</h2>
  	<p>Se puede comparar entre commit diferentes a traves del uso de GIT DIFF. La sintaxis es la siguientes:
  	git diff [nombre_log, num_commit o hash] [nombre_log, num_commit o hash]</p>
-
- 	<h2>RESET EN GIT</h2>
+	
+ 	</div>
+	<div>
+	<h2>RESET EN GIT</h2>
  	<p>Existe tres tipos de reset: </p>
  	<ul>
  		<li>git reset --soft</li>
@@ -87,12 +103,17 @@
  	<small><i>NOTA: Se puede recuperar lo eliminado. Pero para eso 
  	se necesita HASH de lo que se desea recuperar. Se recomienda almacenar
  	los LOG</i></small>
- 	<h2>CONFIGURAR OTRO EDITOR PARA GIT</h2>
+ 		
+	</div> 	
+	<div>
+	<h2>CONFIGURAR OTRO EDITOR PARA GIT</h2>
  	<p>La configuracion de otro editor sera util para facilir la edicion de texto. El comando es:</p>
  	<p><i>git congif --global core.edit "[nombre del editor] --wait" -> Wairt se utiliza para esperar hasta que el editor guarde los cambios</i></p>
  	<p><small>PARA WIN: git config --global core.editor"C:/Users/_USERNAME_/AppData/Local/atom/app-_VERSION_/atom.exe"</small></p>
+ 		
+	</div>
  	<div>
- 		<h1>RAMAS</h1>
+ 		<h2>RAMAS</h2>
  		<h2>Git BRACH</h2>
  		<ul>
  			<li>git brach [nombre de la rama]: <small>Crea una nueva rama</small></li>
@@ -138,8 +159,7 @@
   		<P>Para mover uncommit entre ramas es necesario el comando: <strong>git commit cherry-pick [hash del commit]</strong>. Recuerde que para esto es necesario copiar el hash que se encuetra en la rama que va a mover el has despues moverse a la rama donde quiere el commit y ejecutar el comando</P>
   	</div>
   	<div>
-  		<h1>GITHUB</h1>
-  		<h2>Descripción General</h2>
+  		<h2>GITHUB</h2>
   		<p>Lenguaje de marcado: </p>
   	</div>
 </body>
